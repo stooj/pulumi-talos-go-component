@@ -1,0 +1,2 @@
+environment:
+  - pulumi-support/digitalocean-api
