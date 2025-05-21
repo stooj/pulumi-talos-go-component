@@ -1,4 +1,4 @@
-module talos-go-component
+module github.com/stooj/pulumi-talos-go-component
 
 go 1.22
 
