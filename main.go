@@ -1,15 +1,14 @@
 package main
 
 import (
-	"github.com/dirien/pulumi-talos-go-component/pkg/talos"
-
 	"github.com/pulumi/pulumi-go-provider/infer"
+	"github.com/stooj/pulumi-talos-go-component/pkg/talos"
 )
 
 func main() {
 	err := infer.NewProviderBuilder().
-		WithName("go-components").
-		WithNameSpace("stooj").
+		WithName("talos-go-component").
+		WithNamespace("stooj").
 		WithComponents(
 			infer.Component(talos.NewTalosCluster),
 		).
